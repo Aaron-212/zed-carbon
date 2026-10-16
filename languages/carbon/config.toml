@@ -1,0 +1,11 @@
+name = "Carbon"
+grammar = "carbon"
+path_suffixes = ["carbon"]
+line_comments = ["// "]
+brackets = [
+  { start = "{", end = "}", close = true, newline = true, not_in = ["string", "comment"] },
+  { start = "[", end = "]", close = true, newline = true, not_in = ["string", "comment"] },
+  { start = "(", end = ")", close = true, newline = true, not_in = ["string", "comment"] },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["string", "comment"] },
+  { start = "'", end = "'", close = true, newline = false, not_in = ["string", "comment"] },
+]
